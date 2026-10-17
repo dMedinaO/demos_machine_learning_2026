@@ -33,7 +33,7 @@ A separate document and notebook will later address exploratory analysis when th
 The practical example associated with this document will be developed in:
 
 ```text
-notebooks/tabular_data/
+notebooks/tabular/task1_alzheimer/
 ```
 
 and will use the processed tabular dataset generated in the preprocessing notebook.
@@ -1390,7 +1390,7 @@ The purpose of the current stage is to understand the dataset and the classifica
 
 ## 64. Planned practical example
 
-The corresponding notebook in `notebooks/tabular_data/` should implement the concepts from this document in a transparent sequence.
+The corresponding notebook in `notebooks/tabular/task1_alzheimer/` should implement the concepts from this document in a transparent sequence.
 
 A suitable notebook structure is:
 

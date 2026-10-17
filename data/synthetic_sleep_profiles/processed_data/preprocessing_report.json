@@ -1,0 +1,53 @@
+{
+  "dataset": "synthetic_sleep_profiles",
+  "task_type": "multiclass_classification",
+  "label_type": "categorical_multiclass",
+  "input_file": "data/synthetic_sleep_profiles/raw_data/synthetic_sleep_profiles_1200.csv",
+  "metadata_file": "data/synthetic_sleep_profiles/raw_data/metadata.json",
+  "output_file": "data/synthetic_sleep_profiles/processed_data/synthetic_sleep_profiles_1200_processed.csv",
+  "input_shape": [
+    1200,
+    23
+  ],
+  "output_shape": [
+    1200,
+    23
+  ],
+  "identifier_column": "participant_id",
+  "target_column": "sleep_profile",
+  "target_classes": [
+    "healthy_sleep",
+    "insomnia",
+    "sleep_apnea",
+    "circadian_disruption"
+  ],
+  "numerical_columns": [
+    "age",
+    "height_cm",
+    "weight_kg",
+    "bmi",
+    "sleep_duration_hours",
+    "sleep_efficiency_pct",
+    "sleep_latency_min",
+    "night_awakenings",
+    "resting_heart_rate_bpm",
+    "daily_steps",
+    "caffeine_mg_day",
+    "screen_time_evening_min",
+    "stress_score_0_10",
+    "social_jetlag_hours",
+    "bedtime_variability_min"
+  ],
+  "categorical_columns": [
+    "sex_female",
+    "shift_worker",
+    "regular_exercise",
+    "evening_alcohol",
+    "loud_snoring",
+    "anxiety_history"
+  ],
+  "exact_duplicate_rows_found": 0,
+  "duplicated_identifiers_found": 0,
+  "missing_values_after_preprocessing": 0,
+  "bmi_consistency_check": true
+}

@@ -8,10 +8,13 @@ The purpose of preprocessing is not to discover biological, statistical, or pred
 
 This document focuses only on **tabular datasets**, where observations are stored in rows and variables are stored in columns.
 
-The first practical example in this repository will follow this workflow and will be available in:
+The practical examples in this repository follow this workflow and are organized by task under:
 
 ```text
-notebooks/tabular_data/
+notebooks/tabular/
+├── task1_alzheimer/
+├── task2_sleep_profiles/
+└── task3_crop_yield/
 ```
 
 That notebook will provide an executable example of the steps described here.
@@ -983,10 +986,10 @@ Some transformations, especially scaling, imputation, categorical encoding, and 
 
 # 30. First repository example
 
-The first practical demonstration of tabular preprocessing will be developed under:
+The practical demonstrations of tabular preprocessing are organized by dataset/task under:
 
 ```text
-notebooks/tabular_data/
+notebooks/tabular/<task>/
 ```
 
 The notebook will follow the workflow described here using a concrete dataset and executable Python code.
