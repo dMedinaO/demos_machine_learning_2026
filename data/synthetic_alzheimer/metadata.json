@@ -1,0 +1,37 @@
+{
+    "label": "alzheimer",
+    "col_id": "patient_id",
+    "categorical_column" : [
+        "sex_female",
+        "smoker",
+        "alcohol_risk",
+        "physical_inactivity",
+        "hypertension",
+        "diabetes_type2",
+        "dyslipidemia",
+        "cardiovascular_disease",
+        "stroke_history",
+        "depression_history",
+        "traumatic_brain_injury",
+        "family_history_alzheimer",
+        "sleep_disorder",
+        "chronic_kidney_disease",
+        "hearing_loss",
+        "asthma",
+        "allergy_medication",
+        "allergy_food",
+        "allergy_environmental"
+    ],
+    "numerical_column":[
+        "age",
+        "height_cm",
+        "weight_kg",
+        "bmi",
+        "waist_cm",
+        "hip_cm",
+        "waist_hip_ratio",
+        "systolic_bp_mmHg",
+        "diastolic_bp_mmHg",
+        "heart_rate_bpm"
+    ]
+}
