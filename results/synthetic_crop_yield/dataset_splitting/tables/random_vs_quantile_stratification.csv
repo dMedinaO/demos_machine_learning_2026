@@ -1,0 +1,5 @@
+strategy,split,absolute_target_mean_smd,wasserstein_distance_t_ha
+random,validation,0.08358149766845067,0.15922222222222218
+random,test,0.13644283643335522,0.26530158730158737
+quantile_stratified,validation,0.03457337169913924,0.08103571428571422
+quantile_stratified,test,0.020111379382905237,0.09158333333333331

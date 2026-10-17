@@ -1,0 +1,14 @@
+{
+  "strategy": "stratified train/validation/test holdout",
+  "random_state": 42,
+  "train_fraction": 0.7,
+  "validation_fraction": 0.15,
+  "test_fraction": 0.15,
+  "identifier_column": "patient_id",
+  "target_column": "alzheimer",
+  "n_total": 1000,
+  "n_train": 700,
+  "n_validation": 150,
+  "n_test": 150,
+  "note": "Demonstration split only; the later end-to-end ML preparation notebook will define the operational modelling workflow."
+}

@@ -1,0 +1,12 @@
+{
+  "primary_demonstration_strategy": "random train/validation/test holdout",
+  "secondary_strategy": "target-quantile-bin stratified holdout",
+  "random_state": 42,
+  "train_fraction": 0.7,
+  "validation_fraction": 0.15,
+  "test_fraction": 0.15,
+  "target_quantile_bins": 10,
+  "identifier_column": "plot_id",
+  "target_column": "yield_t_ha",
+  "note": "Quantile bins are used only for optional split assignment; the original target remains continuous. These are demonstration splits, not a frozen benchmark definition."
+}

@@ -1,0 +1,4 @@
+split,distance_to_train_centroid
+train,0.0
+validation,0.3898297308859533
+test,0.405167091836687

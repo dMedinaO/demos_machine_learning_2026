@@ -1,0 +1,4 @@
+split,n,fraction
+train,840,0.7
+validation,180,0.15
+test,180,0.15

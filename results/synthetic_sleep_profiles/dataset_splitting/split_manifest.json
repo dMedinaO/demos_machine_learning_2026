@@ -1,0 +1,14 @@
+{
+  "strategy": "stratified train/validation/test holdout",
+  "random_state": 42,
+  "train_fraction": 0.7,
+  "validation_fraction": 0.15,
+  "test_fraction": 0.15,
+  "identifier_column": "participant_id",
+  "target_column": "sleep_profile",
+  "n_total": 1200,
+  "n_train": 840,
+  "n_validation": 180,
+  "n_test": 180,
+  "note": "Demonstration split only; the later end-to-end ML preparation notebook will define the operational modelling workflow."
+}
