@@ -1,0 +1,36 @@
+{
+    "label": "sleep_profile",
+    "label_type": "categorical_multiclass",
+    "classes": [
+        "healthy_sleep",
+        "insomnia",
+        "sleep_apnea",
+        "circadian_disruption"
+    ],
+    "col_id": "participant_id",
+    "categorical_column": [
+        "sex_female",
+        "shift_worker",
+        "regular_exercise",
+        "evening_alcohol",
+        "loud_snoring",
+        "anxiety_history"
+    ],
+    "numerical_column": [
+        "age",
+        "height_cm",
+        "weight_kg",
+        "bmi",
+        "sleep_duration_hours",
+        "sleep_efficiency_pct",
+        "sleep_latency_min",
+        "night_awakenings",
+        "resting_heart_rate_bpm",
+        "daily_steps",
+        "caffeine_mg_day",
+        "screen_time_evening_min",
+        "stress_score_0_10",
+        "social_jetlag_hours",
+        "bedtime_variability_min"
+    ]
+}
