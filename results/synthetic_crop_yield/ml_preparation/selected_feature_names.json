@@ -1,0 +1,19 @@
+[
+  "season_rainfall_mm",
+  "soil_organic_matter_pct",
+  "nitrogen_kg_ha",
+  "irrigation_mm",
+  "solar_radiation_mj_m2_day",
+  "field_slope_pct",
+  "pest_pressure_score_0_10",
+  "soil_moisture_pct",
+  "npk_total_kg_ha",
+  "n_to_p_ratio",
+  "soil_moisture_pct_squared",
+  "water_x_drought",
+  "pest_x_fungicide",
+  "organic_matter_x_moisture",
+  "cultivar_improved",
+  "organic_management",
+  "drought_event"
+]

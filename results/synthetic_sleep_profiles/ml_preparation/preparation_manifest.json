@@ -1,0 +1,134 @@
+{
+  "dataset": "synthetic_sleep_profiles",
+  "task_type": "multiclass_classification",
+  "source": "data/synthetic_sleep_profiles/raw_data/synthetic_sleep_profiles_1200.csv",
+  "identifier": "participant_id",
+  "target": "sleep_profile",
+  "random_state": 42,
+  "split_fractions": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "split_sizes": {
+    "train": 840,
+    "validation": 180,
+    "test": 180
+  },
+  "original_numerical_features": [
+    "age",
+    "height_cm",
+    "weight_kg",
+    "bmi",
+    "sleep_duration_hours",
+    "sleep_efficiency_pct",
+    "sleep_latency_min",
+    "night_awakenings",
+    "resting_heart_rate_bpm",
+    "daily_steps",
+    "caffeine_mg_day",
+    "screen_time_evening_min",
+    "stress_score_0_10",
+    "social_jetlag_hours",
+    "bedtime_variability_min"
+  ],
+  "engineered_numerical_features": [
+    "sleep_duration_deviation_8h",
+    "sleep_efficiency_deficit_pct",
+    "sleep_fragmentation_per_hour",
+    "circadian_disruption_index",
+    "behavioral_risk_count"
+  ],
+  "binary_categorical_features": [
+    "sex_female",
+    "shift_worker",
+    "regular_exercise",
+    "evening_alcohol",
+    "loud_snoring",
+    "anxiety_history"
+  ],
+  "candidate_features": [
+    "age",
+    "height_cm",
+    "weight_kg",
+    "bmi",
+    "sleep_duration_hours",
+    "sleep_efficiency_pct",
+    "sleep_latency_min",
+    "night_awakenings",
+    "resting_heart_rate_bpm",
+    "daily_steps",
+    "caffeine_mg_day",
+    "screen_time_evening_min",
+    "stress_score_0_10",
+    "social_jetlag_hours",
+    "bedtime_variability_min",
+    "sleep_duration_deviation_8h",
+    "sleep_efficiency_deficit_pct",
+    "sleep_fragmentation_per_hour",
+    "circadian_disruption_index",
+    "behavioral_risk_count",
+    "sex_female",
+    "shift_worker",
+    "regular_exercise",
+    "evening_alcohol",
+    "loud_snoring",
+    "anxiety_history"
+  ],
+  "selection_method": "SelectKBest(f_classif)",
+  "selection_fraction": 0.6,
+  "selection_k": 16,
+  "selected_features": [
+    "age",
+    "bmi",
+    "sleep_efficiency_pct",
+    "sleep_latency_min",
+    "night_awakenings",
+    "caffeine_mg_day",
+    "screen_time_evening_min",
+    "stress_score_0_10",
+    "social_jetlag_hours",
+    "bedtime_variability_min",
+    "sleep_efficiency_deficit_pct",
+    "sleep_fragmentation_per_hour",
+    "circadian_disruption_index",
+    "behavioral_risk_count",
+    "shift_worker",
+    "anxiety_history"
+  ],
+  "prepared_dimensions": {
+    "train": [
+      840,
+      16
+    ],
+    "validation": [
+      180,
+      16
+    ],
+    "test": [
+      180,
+      16
+    ]
+  },
+  "artifacts": {
+    "unfitted_preparation_template": "results/synthetic_sleep_profiles/ml_preparation/artifacts/preparation_pipeline_template.joblib",
+    "fitted_preparation": "results/synthetic_sleep_profiles/ml_preparation/artifacts/preparation_pipeline_fitted.joblib",
+    "split_assignments": "results/synthetic_sleep_profiles/ml_preparation/tables/split_assignments.csv",
+    "target_encoder": "results/synthetic_sleep_profiles/ml_preparation/artifacts/target_label_encoder.joblib"
+  },
+  "software": {
+    "python": "3.14.8",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "fixed_split_note": "The fitted preparation artifact is valid for the fixed TRAIN/VALIDATION/TEST workflow and for later target-free external observations transformed without refitting.",
+  "cross_validation_warning": "If later model development uses cross-validation, load/rebuild the UNFITTED preparation template and fit it inside each training fold together with the estimator. Do not perform cross-validation on features selected once using the complete TRAIN partition.",
+  "target_classes": [
+    "circadian_disruption",
+    "healthy_sleep",
+    "insomnia",
+    "sleep_apnea"
+  ]
+}

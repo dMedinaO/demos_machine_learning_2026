@@ -1,0 +1,18 @@
+[
+  "age",
+  "bmi",
+  "sleep_efficiency_pct",
+  "sleep_latency_min",
+  "night_awakenings",
+  "caffeine_mg_day",
+  "screen_time_evening_min",
+  "stress_score_0_10",
+  "social_jetlag_hours",
+  "bedtime_variability_min",
+  "sleep_efficiency_deficit_pct",
+  "sleep_fragmentation_per_hour",
+  "circadian_disruption_index",
+  "behavioral_risk_count",
+  "shift_worker",
+  "anxiety_history"
+]

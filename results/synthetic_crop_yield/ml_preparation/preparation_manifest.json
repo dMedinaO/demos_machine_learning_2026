@@ -1,0 +1,133 @@
+{
+  "dataset": "synthetic_crop_yield",
+  "task_type": "regression",
+  "source": "data/synthetic_crop_yield/raw_data/synthetic_crop_yield_1200.csv",
+  "identifier": "plot_id",
+  "target": "yield_t_ha",
+  "random_state": 42,
+  "split_fractions": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "split_sizes": {
+    "train": 840,
+    "validation": 180,
+    "test": 180
+  },
+  "original_numerical_features": [
+    "mean_temperature_c",
+    "season_rainfall_mm",
+    "soil_ph",
+    "soil_organic_matter_pct",
+    "nitrogen_kg_ha",
+    "phosphorus_kg_ha",
+    "potassium_kg_ha",
+    "irrigation_mm",
+    "solar_radiation_mj_m2_day",
+    "field_slope_pct",
+    "planting_density_plants_m2",
+    "pest_pressure_score_0_10",
+    "soil_moisture_pct"
+  ],
+  "engineered_numerical_features": [
+    "total_water_mm",
+    "npk_total_kg_ha",
+    "n_to_p_ratio",
+    "mean_temperature_c_squared",
+    "soil_ph_squared",
+    "soil_moisture_pct_squared",
+    "water_x_drought",
+    "pest_x_fungicide",
+    "organic_matter_x_moisture"
+  ],
+  "binary_categorical_features": [
+    "irrigation_system_drip",
+    "cultivar_improved",
+    "previous_legume_crop",
+    "organic_management",
+    "fungicide_used",
+    "drought_event"
+  ],
+  "candidate_features": [
+    "mean_temperature_c",
+    "season_rainfall_mm",
+    "soil_ph",
+    "soil_organic_matter_pct",
+    "nitrogen_kg_ha",
+    "phosphorus_kg_ha",
+    "potassium_kg_ha",
+    "irrigation_mm",
+    "solar_radiation_mj_m2_day",
+    "field_slope_pct",
+    "planting_density_plants_m2",
+    "pest_pressure_score_0_10",
+    "soil_moisture_pct",
+    "total_water_mm",
+    "npk_total_kg_ha",
+    "n_to_p_ratio",
+    "mean_temperature_c_squared",
+    "soil_ph_squared",
+    "soil_moisture_pct_squared",
+    "water_x_drought",
+    "pest_x_fungicide",
+    "organic_matter_x_moisture",
+    "irrigation_system_drip",
+    "cultivar_improved",
+    "previous_legume_crop",
+    "organic_management",
+    "fungicide_used",
+    "drought_event"
+  ],
+  "selection_method": "SelectKBest(f_regression)",
+  "selection_fraction": 0.6,
+  "selection_k": 17,
+  "selected_features": [
+    "season_rainfall_mm",
+    "soil_organic_matter_pct",
+    "nitrogen_kg_ha",
+    "irrigation_mm",
+    "solar_radiation_mj_m2_day",
+    "field_slope_pct",
+    "pest_pressure_score_0_10",
+    "soil_moisture_pct",
+    "npk_total_kg_ha",
+    "n_to_p_ratio",
+    "soil_moisture_pct_squared",
+    "water_x_drought",
+    "pest_x_fungicide",
+    "organic_matter_x_moisture",
+    "cultivar_improved",
+    "organic_management",
+    "drought_event"
+  ],
+  "prepared_dimensions": {
+    "train": [
+      840,
+      17
+    ],
+    "validation": [
+      180,
+      17
+    ],
+    "test": [
+      180,
+      17
+    ]
+  },
+  "artifacts": {
+    "unfitted_preparation_template": "results/synthetic_crop_yield/ml_preparation/artifacts/preparation_pipeline_template.joblib",
+    "fitted_preparation": "results/synthetic_crop_yield/ml_preparation/artifacts/preparation_pipeline_fitted.joblib",
+    "split_assignments": "results/synthetic_crop_yield/ml_preparation/tables/split_assignments.csv"
+  },
+  "software": {
+    "python": "3.14.8",
+    "pandas": "3.0.6",
+    "numpy": "2.5.4",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "fixed_split_note": "The fitted preparation artifact is valid for the fixed TRAIN/VALIDATION/TEST workflow and for later target-free external observations transformed without refitting.",
+  "cross_validation_warning": "If later model development uses cross-validation, load/rebuild the UNFITTED preparation template and fit it inside each training fold together with the estimator. Do not perform cross-validation on features selected once using the complete TRAIN partition.",
+  "target_scaling": "none; yield remains in t/ha"
+}
