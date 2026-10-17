@@ -1,0 +1,59 @@
+{
+  "dataset": "synthetic_sleep_profiles",
+  "task_type": "multiclass_classification",
+  "evaluation_status": "final_test_evaluation",
+  "selected_family": "Extra Trees",
+  "estimator_class": "ExtraTreesClassifier",
+  "selected_hyperparameters": {
+    "n_estimators": 150,
+    "max_depth": null,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "class_weight": "balanced"
+  },
+  "candidate_families_from_hpo": [
+    "Extra Trees",
+    "Random Forest",
+    "SVM"
+  ],
+  "primary_metric": "Macro F1",
+  "development_cv_value": 0.4817723075575572,
+  "final_test_primary_value": 0.4106400654985871,
+  "test_minus_cv": -0.07113224205897006,
+  "test_rows": 180,
+  "candidate_predictors": 26,
+  "selected_predictors": [
+    "age",
+    "bmi",
+    "sleep_duration_hours",
+    "sleep_efficiency_pct",
+    "sleep_latency_min",
+    "night_awakenings",
+    "screen_time_evening_min",
+    "stress_score_0_10",
+    "social_jetlag_hours",
+    "bedtime_variability_min",
+    "sleep_efficiency_deficit_pct",
+    "sleep_fragmentation_per_hour",
+    "circadian_disruption_index",
+    "behavioral_risk_count",
+    "shift_worker",
+    "anxiety_history"
+  ],
+  "all_test_metrics": {
+    "accuracy": 0.4166666666666667,
+    "balanced_accuracy": 0.41593485879200165,
+    "macro_precision": 0.4134214485278315,
+    "macro_recall": 0.41593485879200165,
+    "macro_f1": 0.4106400654985871,
+    "weighted_f1": 0.4130460994246912,
+    "multiclass_mcc": 0.22480889445275323,
+    "macro_ovr_roc_auc": 0.6602569107871065,
+    "log_loss": 1.2828054739212824
+  },
+  "final_model_artifact": "results/synthetic_sleep_profiles/hyperparameter_optimization/artifacts/final_optimized_model.joblib",
+  "model_refit_in_test_notebook": false,
+  "test_used_for_hyperparameter_selection": false,
+  "test_used_for_family_selection": false,
+  "post_test_retuning_allowed": false
+}
