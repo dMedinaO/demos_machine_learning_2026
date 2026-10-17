@@ -1,0 +1,13 @@
+family,class_id,class_name,f1
+Extra Trees,0,circadian_disruption,0.5
+Extra Trees,1,healthy_sleep,0.4883720930232558
+Extra Trees,2,insomnia,0.5168539325842697
+Extra Trees,3,sleep_apnea,0.33663366336633666
+Random Forest,0,circadian_disruption,0.5
+Random Forest,1,healthy_sleep,0.5238095238095238
+Random Forest,2,insomnia,0.5263157894736842
+Random Forest,3,sleep_apnea,0.27956989247311825
+SVM,0,circadian_disruption,0.4842105263157895
+SVM,1,healthy_sleep,0.4791666666666667
+SVM,2,insomnia,0.5842696629213483
+SVM,3,sleep_apnea,0.25

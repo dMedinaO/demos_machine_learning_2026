@@ -1,0 +1,53 @@
+{
+  "dataset": "synthetic_alzheimer",
+  "task_type": "binary_classification",
+  "screening_scope": "fixed TRAIN/VALIDATION holdout only",
+  "test_used": false,
+  "primary_metric": "MCC",
+  "selection_level": "algorithm family",
+  "n_candidate_configurations": 19,
+  "n_nonbaseline_families": 6,
+  "top3": [
+    {
+      "rank": 1,
+      "family": "SVM",
+      "screening_config_id": "svm_linear_C1",
+      "screening_params": {
+        "C": 1.0,
+        "kernel": "linear"
+      },
+      "validation_mcc": 0.3484821153303148,
+      "validation_balanced_accuracy": 0.667778649921507,
+      "validation_roc_auc": 0.7401883830455259,
+      "train_validation_mcc_gap": 0.13106938190826278
+    },
+    {
+      "rank": 2,
+      "family": "Logistic Regression",
+      "screening_config_id": "logreg_C0.1",
+      "screening_params": {
+        "C": 0.1
+      },
+      "validation_mcc": 0.3436469515259675,
+      "validation_balanced_accuracy": 0.6632653061224489,
+      "validation_roc_auc": 0.7360675039246467,
+      "train_validation_mcc_gap": 0.1435993466142168
+    },
+    {
+      "rank": 3,
+      "family": "HistGradientBoosting",
+      "screening_config_id": "hgb_lr0.05_leaf15",
+      "screening_params": {
+        "l2_regularization": 0.0,
+        "learning_rate": 0.05,
+        "max_iter": 200,
+        "max_leaf_nodes": 15
+      },
+      "validation_mcc": 0.3111111672232945,
+      "validation_balanced_accuracy": 0.6524725274725275,
+      "validation_roc_auc": 0.711342229199372,
+      "train_validation_mcc_gap": 0.635279642131303
+    }
+  ],
+  "next_step": "Optimize these three families using TRAIN-only cross-validation. Combine each estimator with preparation_pipeline_template.joblib inside CV. Keep TEST protected."
+}

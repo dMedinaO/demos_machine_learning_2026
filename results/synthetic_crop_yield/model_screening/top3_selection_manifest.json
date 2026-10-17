@@ -1,0 +1,52 @@
+{
+  "dataset": "synthetic_crop_yield",
+  "task_type": "regression",
+  "screening_scope": "fixed TRAIN/VALIDATION holdout only",
+  "test_used": false,
+  "primary_metric": "MAE",
+  "primary_metric_direction": "minimize",
+  "selection_level": "algorithm family",
+  "target_units": "t/ha",
+  "n_candidate_configurations": 23,
+  "n_nonbaseline_families": 8,
+  "top3": [
+    {
+      "rank": 1,
+      "family": "Linear Regression",
+      "screening_config_id": "linear_default",
+      "screening_params": {},
+      "validation_mae_t_ha": 0.8408097516346721,
+      "validation_rmse_t_ha": 1.0602965305265146,
+      "validation_r2": 0.4521099550243751,
+      "validation_minus_train_mae_gap": 0.04156325913821446
+    },
+    {
+      "rank": 2,
+      "family": "Ridge",
+      "screening_config_id": "ridge_alpha0.1",
+      "screening_params": {
+        "alpha": 0.1
+      },
+      "validation_mae_t_ha": 0.8412638580169477,
+      "validation_rmse_t_ha": 1.0605881959076402,
+      "validation_r2": 0.4518084874007894,
+      "validation_minus_train_mae_gap": 0.04200071554534024
+    },
+    {
+      "rank": 3,
+      "family": "SVR",
+      "screening_config_id": "svr_rbf_C1",
+      "screening_params": {
+        "C": 1.0,
+        "epsilon": 0.1,
+        "gamma": "scale",
+        "kernel": "rbf"
+      },
+      "validation_mae_t_ha": 0.8416075793418041,
+      "validation_rmse_t_ha": 1.0713504837083234,
+      "validation_r2": 0.4406265246948433,
+      "validation_minus_train_mae_gap": 0.21392373589721025
+    }
+  ],
+  "next_step": "Optimize these three families using TRAIN-only cross-validation. Combine each estimator with preparation_pipeline_template.joblib inside CV. Keep TEST protected."
+}

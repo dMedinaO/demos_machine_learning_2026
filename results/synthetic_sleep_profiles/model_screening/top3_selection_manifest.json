@@ -1,0 +1,60 @@
+{
+  "dataset": "synthetic_sleep_profiles",
+  "task_type": "multiclass_classification",
+  "screening_scope": "fixed TRAIN/VALIDATION holdout only",
+  "test_used": false,
+  "primary_metric": "macro F1",
+  "selection_level": "algorithm family",
+  "classes": [
+    "circadian_disruption",
+    "healthy_sleep",
+    "insomnia",
+    "sleep_apnea"
+  ],
+  "n_candidate_configurations": 19,
+  "n_nonbaseline_families": 6,
+  "top3": [
+    {
+      "rank": 1,
+      "family": "Extra Trees",
+      "screening_config_id": "et_depth6_leaf4",
+      "screening_params": {
+        "max_depth": 6,
+        "min_samples_leaf": 4,
+        "n_estimators": 300
+      },
+      "validation_macro_f1": 0.4604649222434655,
+      "validation_mcc": 0.2784942973290934,
+      "validation_balanced_accuracy": 0.45740486257928115,
+      "train_validation_macro_f1_gap": 0.1387048251251906
+    },
+    {
+      "rank": 2,
+      "family": "Random Forest",
+      "screening_config_id": "rf_depth6_leaf4",
+      "screening_params": {
+        "max_depth": 6,
+        "min_samples_leaf": 4,
+        "n_estimators": 300
+      },
+      "validation_macro_f1": 0.4574238014390815,
+      "validation_mcc": 0.2768607304361759,
+      "validation_balanced_accuracy": 0.45711945031712475,
+      "train_validation_macro_f1_gap": 0.23682749178462997
+    },
+    {
+      "rank": 3,
+      "family": "SVM",
+      "screening_config_id": "svm_linear_C1",
+      "screening_params": {
+        "C": 1.0,
+        "kernel": "linear"
+      },
+      "validation_macro_f1": 0.44941171397595114,
+      "validation_mcc": 0.27546542094132925,
+      "validation_balanced_accuracy": 0.4567019027484144,
+      "train_validation_macro_f1_gap": 0.05165373773082771
+    }
+  ],
+  "next_step": "Optimize these three families using TRAIN-only stratified cross-validation. Combine each estimator with preparation_pipeline_template.joblib inside CV. Keep TEST protected."
+}
