@@ -1,0 +1,4 @@
+feature_a,feature_b,spearman_rho,abs_spearman_rho
+mean_temperature_c,mean_temperature_c_squared,1.0,1.0
+soil_ph,soil_ph_squared,1.0,1.0
+soil_moisture_pct,soil_moisture_pct_squared,1.0,1.0
