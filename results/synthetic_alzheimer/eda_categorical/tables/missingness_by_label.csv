@@ -1,0 +1,59 @@
+label,label_name,feature,missing_count,missing_percentage
+0,No Alzheimer,age,0,0.0
+0,No Alzheimer,height_cm,0,0.0
+0,No Alzheimer,weight_kg,0,0.0
+0,No Alzheimer,bmi,0,0.0
+0,No Alzheimer,waist_cm,0,0.0
+0,No Alzheimer,hip_cm,0,0.0
+0,No Alzheimer,waist_hip_ratio,0,0.0
+0,No Alzheimer,systolic_bp_mmhg,0,0.0
+0,No Alzheimer,diastolic_bp_mmhg,0,0.0
+0,No Alzheimer,heart_rate_bpm,0,0.0
+0,No Alzheimer,sex_female,0,0.0
+0,No Alzheimer,smoker,0,0.0
+0,No Alzheimer,alcohol_risk,0,0.0
+0,No Alzheimer,physical_inactivity,0,0.0
+0,No Alzheimer,hypertension,0,0.0
+0,No Alzheimer,diabetes_type2,0,0.0
+0,No Alzheimer,dyslipidemia,0,0.0
+0,No Alzheimer,cardiovascular_disease,0,0.0
+0,No Alzheimer,stroke_history,0,0.0
+0,No Alzheimer,depression_history,0,0.0
+0,No Alzheimer,traumatic_brain_injury,0,0.0
+0,No Alzheimer,family_history_alzheimer,0,0.0
+0,No Alzheimer,sleep_disorder,0,0.0
+0,No Alzheimer,chronic_kidney_disease,0,0.0
+0,No Alzheimer,hearing_loss,0,0.0
+0,No Alzheimer,asthma,0,0.0
+0,No Alzheimer,allergy_medication,0,0.0
+0,No Alzheimer,allergy_food,0,0.0
+0,No Alzheimer,allergy_environmental,0,0.0
+1,Alzheimer,age,0,0.0
+1,Alzheimer,height_cm,0,0.0
+1,Alzheimer,weight_kg,0,0.0
+1,Alzheimer,bmi,0,0.0
+1,Alzheimer,waist_cm,0,0.0
+1,Alzheimer,hip_cm,0,0.0
+1,Alzheimer,waist_hip_ratio,0,0.0
+1,Alzheimer,systolic_bp_mmhg,0,0.0
+1,Alzheimer,diastolic_bp_mmhg,0,0.0
+1,Alzheimer,heart_rate_bpm,0,0.0
+1,Alzheimer,sex_female,0,0.0
+1,Alzheimer,smoker,0,0.0
+1,Alzheimer,alcohol_risk,0,0.0
+1,Alzheimer,physical_inactivity,0,0.0
+1,Alzheimer,hypertension,0,0.0
+1,Alzheimer,diabetes_type2,0,0.0
+1,Alzheimer,dyslipidemia,0,0.0
+1,Alzheimer,cardiovascular_disease,0,0.0
+1,Alzheimer,stroke_history,0,0.0
+1,Alzheimer,depression_history,0,0.0
+1,Alzheimer,traumatic_brain_injury,0,0.0
+1,Alzheimer,family_history_alzheimer,0,0.0
+1,Alzheimer,sleep_disorder,0,0.0
+1,Alzheimer,chronic_kidney_disease,0,0.0
+1,Alzheimer,hearing_loss,0,0.0
+1,Alzheimer,asthma,0,0.0
+1,Alzheimer,allergy_medication,0,0.0
+1,Alzheimer,allergy_food,0,0.0
+1,Alzheimer,allergy_environmental,0,0.0

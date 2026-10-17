@@ -1,0 +1,11 @@
+property,value
+Observations,1000
+Columns in processed table,31
+Identifier columns,1
+Numerical features,10
+Categorical features,19
+Target columns,1
+Target classes,2
+Missing cells,0
+Exact duplicate rows,0
+Duplicated identifiers,0
