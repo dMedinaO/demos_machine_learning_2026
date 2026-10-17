@@ -1,0 +1,85 @@
+label_name,feature,missing_count,missing_percentage
+Healthy Sleep,age,0,0.0
+Healthy Sleep,height_cm,0,0.0
+Healthy Sleep,weight_kg,0,0.0
+Healthy Sleep,bmi,0,0.0
+Healthy Sleep,sleep_duration_hours,0,0.0
+Healthy Sleep,sleep_efficiency_pct,0,0.0
+Healthy Sleep,sleep_latency_min,0,0.0
+Healthy Sleep,night_awakenings,0,0.0
+Healthy Sleep,resting_heart_rate_bpm,0,0.0
+Healthy Sleep,daily_steps,0,0.0
+Healthy Sleep,caffeine_mg_day,0,0.0
+Healthy Sleep,screen_time_evening_min,0,0.0
+Healthy Sleep,stress_score_0_10,0,0.0
+Healthy Sleep,social_jetlag_hours,0,0.0
+Healthy Sleep,bedtime_variability_min,0,0.0
+Healthy Sleep,sex_female,0,0.0
+Healthy Sleep,shift_worker,0,0.0
+Healthy Sleep,regular_exercise,0,0.0
+Healthy Sleep,evening_alcohol,0,0.0
+Healthy Sleep,loud_snoring,0,0.0
+Healthy Sleep,anxiety_history,0,0.0
+Insomnia,age,0,0.0
+Insomnia,height_cm,0,0.0
+Insomnia,weight_kg,0,0.0
+Insomnia,bmi,0,0.0
+Insomnia,sleep_duration_hours,0,0.0
+Insomnia,sleep_efficiency_pct,0,0.0
+Insomnia,sleep_latency_min,0,0.0
+Insomnia,night_awakenings,0,0.0
+Insomnia,resting_heart_rate_bpm,0,0.0
+Insomnia,daily_steps,0,0.0
+Insomnia,caffeine_mg_day,0,0.0
+Insomnia,screen_time_evening_min,0,0.0
+Insomnia,stress_score_0_10,0,0.0
+Insomnia,social_jetlag_hours,0,0.0
+Insomnia,bedtime_variability_min,0,0.0
+Insomnia,sex_female,0,0.0
+Insomnia,shift_worker,0,0.0
+Insomnia,regular_exercise,0,0.0
+Insomnia,evening_alcohol,0,0.0
+Insomnia,loud_snoring,0,0.0
+Insomnia,anxiety_history,0,0.0
+Sleep Apnea,age,0,0.0
+Sleep Apnea,height_cm,0,0.0
+Sleep Apnea,weight_kg,0,0.0
+Sleep Apnea,bmi,0,0.0
+Sleep Apnea,sleep_duration_hours,0,0.0
+Sleep Apnea,sleep_efficiency_pct,0,0.0
+Sleep Apnea,sleep_latency_min,0,0.0
+Sleep Apnea,night_awakenings,0,0.0
+Sleep Apnea,resting_heart_rate_bpm,0,0.0
+Sleep Apnea,daily_steps,0,0.0
+Sleep Apnea,caffeine_mg_day,0,0.0
+Sleep Apnea,screen_time_evening_min,0,0.0
+Sleep Apnea,stress_score_0_10,0,0.0
+Sleep Apnea,social_jetlag_hours,0,0.0
+Sleep Apnea,bedtime_variability_min,0,0.0
+Sleep Apnea,sex_female,0,0.0
+Sleep Apnea,shift_worker,0,0.0
+Sleep Apnea,regular_exercise,0,0.0
+Sleep Apnea,evening_alcohol,0,0.0
+Sleep Apnea,loud_snoring,0,0.0
+Sleep Apnea,anxiety_history,0,0.0
+Circadian Disruption,age,0,0.0
+Circadian Disruption,height_cm,0,0.0
+Circadian Disruption,weight_kg,0,0.0
+Circadian Disruption,bmi,0,0.0
+Circadian Disruption,sleep_duration_hours,0,0.0
+Circadian Disruption,sleep_efficiency_pct,0,0.0
+Circadian Disruption,sleep_latency_min,0,0.0
+Circadian Disruption,night_awakenings,0,0.0
+Circadian Disruption,resting_heart_rate_bpm,0,0.0
+Circadian Disruption,daily_steps,0,0.0
+Circadian Disruption,caffeine_mg_day,0,0.0
+Circadian Disruption,screen_time_evening_min,0,0.0
+Circadian Disruption,stress_score_0_10,0,0.0
+Circadian Disruption,social_jetlag_hours,0,0.0
+Circadian Disruption,bedtime_variability_min,0,0.0
+Circadian Disruption,sex_female,0,0.0
+Circadian Disruption,shift_worker,0,0.0
+Circadian Disruption,regular_exercise,0,0.0
+Circadian Disruption,evening_alcohol,0,0.0
+Circadian Disruption,loud_snoring,0,0.0
+Circadian Disruption,anxiety_history,0,0.0

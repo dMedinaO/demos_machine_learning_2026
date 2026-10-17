@@ -1,0 +1,33 @@
+{
+  "dataset": "synthetic_crop_yield",
+  "task_type": "regression",
+  "input_file": "data/synthetic_crop_yield/processed_data/synthetic_crop_yield_1200_processed.csv",
+  "target_column": "yield_t_ha",
+  "n_observations": 1200,
+  "n_numerical_features": 13,
+  "n_categorical_features": 6,
+  "top_numerical_features_by_abs_spearman": [
+    "pest_pressure_score_0_10",
+    "season_rainfall_mm",
+    "soil_organic_matter_pct",
+    "nitrogen_kg_ha",
+    "solar_radiation_mj_m2_day"
+  ],
+  "top_numerical_features_by_quantile_profile_range": [
+    "mean_temperature_c",
+    "soil_moisture_pct",
+    "pest_pressure_score_0_10",
+    "season_rainfall_mm",
+    "nitrogen_kg_ha"
+  ],
+  "top_categorical_features_by_abs_cliffs_delta": [
+    "drought_event",
+    "cultivar_improved",
+    "organic_management",
+    "irrigation_system_drip",
+    "previous_legume_crop"
+  ],
+  "pca_pc1_variance_ratio": 0.09055075559962208,
+  "pca_pc2_variance_ratio": 0.06333287412627628,
+  "umap_executed": true
+}

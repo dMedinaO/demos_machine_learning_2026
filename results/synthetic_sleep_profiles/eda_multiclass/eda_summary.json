@@ -1,0 +1,32 @@
+{
+  "dataset": "synthetic_sleep_profiles",
+  "task_type": "multiclass_classification",
+  "input_file": "data/synthetic_sleep_profiles/processed_data/synthetic_sleep_profiles_1200_processed.csv",
+  "target_column": "sleep_profile",
+  "target_classes": [
+    "healthy_sleep",
+    "insomnia",
+    "sleep_apnea",
+    "circadian_disruption"
+  ],
+  "n_observations": 1200,
+  "n_numerical_features": 15,
+  "n_categorical_features": 6,
+  "top_numerical_features_by_epsilon_squared": [
+    "sleep_latency_min",
+    "sleep_efficiency_pct",
+    "stress_score_0_10",
+    "bedtime_variability_min",
+    "social_jetlag_hours"
+  ],
+  "top_categorical_features_by_cramers_v": [
+    "shift_worker",
+    "anxiety_history",
+    "loud_snoring",
+    "sex_female",
+    "evening_alcohol"
+  ],
+  "pca_pc1_variance_ratio": 0.12891316123998248,
+  "pca_pc2_variance_ratio": 0.10859051257953027,
+  "umap_executed": true
+}
