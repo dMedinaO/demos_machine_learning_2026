@@ -1,0 +1,4 @@
+rank,family,best_cv_value,best_trial,best_params,best_fold_std,n_trials
+1,Extra Trees,0.4817723075575572,3,"{""class_weight"": ""balanced"", ""max_depth"": null, ""max_features"": ""sqrt"", ""min_samples_leaf"": 2, ""n_estimators"": 150}",0.03140936646019442,20
+2,SVM,0.4752409124154925,11,"{""C"": 0.035084942035693685, ""class_weight"": ""balanced"", ""kernel"": ""linear""}",0.041265940074911876,20
+3,Random Forest,0.46746523406906365,16,"{""class_weight"": null, ""max_depth"": 16, ""max_features"": 0.8, ""min_samples_leaf"": 1, ""n_estimators"": 450}",0.03408839485152501,20

@@ -1,0 +1,20 @@
+{
+  "dataset": "synthetic_alzheimer",
+  "task_type": "binary_classification",
+  "selected_family": "SVM",
+  "primary_metric": "MCC",
+  "optimization_direction": "maximize",
+  "best_cv_value": 0.4412536277557112,
+  "best_trial": 16,
+  "best_hyperparameters": {
+    "kernel": "linear",
+    "C": 0.04235455276099052,
+    "class_weight": null
+  },
+  "cv_folds": 5,
+  "development_rows": 850,
+  "development_source": "TRAIN + VALIDATION from notebook 06",
+  "test_used": false,
+  "final_refit": "complete TRAIN + VALIDATION development set",
+  "artifact": "results/synthetic_alzheimer/hyperparameter_optimization/artifacts/final_optimized_model.joblib"
+}

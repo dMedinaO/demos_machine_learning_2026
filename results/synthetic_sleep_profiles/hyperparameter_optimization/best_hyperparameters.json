@@ -1,0 +1,22 @@
+{
+  "dataset": "synthetic_sleep_profiles",
+  "task_type": "multiclass_classification",
+  "selected_family": "Extra Trees",
+  "primary_metric": "Macro F1",
+  "optimization_direction": "maximize",
+  "best_cv_value": 0.4817723075575572,
+  "best_trial": 3,
+  "best_hyperparameters": {
+    "n_estimators": 150,
+    "max_depth": null,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "class_weight": "balanced"
+  },
+  "cv_folds": 5,
+  "development_rows": 1020,
+  "development_source": "TRAIN + VALIDATION from notebook 06",
+  "test_used": false,
+  "final_refit": "complete TRAIN + VALIDATION development set",
+  "artifact": "results/synthetic_sleep_profiles/hyperparameter_optimization/artifacts/final_optimized_model.joblib"
+}

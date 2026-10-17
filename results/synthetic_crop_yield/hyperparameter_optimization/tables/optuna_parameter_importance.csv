@@ -1,0 +1,8 @@
+family,parameter,importance
+Linear Regression,fit_intercept,1.0
+Ridge,alpha,0.9990778139956379
+Ridge,fit_intercept,0.0009221860043621157
+SVR,C,0.8844858336176915
+SVR,gamma,0.06567839055374922
+SVR,epsilon,0.04834992417270282
+SVR,kernel,0.0014858516558565083

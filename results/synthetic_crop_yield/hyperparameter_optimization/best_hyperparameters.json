@@ -1,0 +1,22 @@
+{
+  "dataset": "synthetic_crop_yield",
+  "task_type": "regression",
+  "selected_family": "SVR",
+  "primary_metric": "MAE (t/ha)",
+  "optimization_direction": "minimize",
+  "best_cv_value": 0.7941752527957248,
+  "best_trial": 7,
+  "best_hyperparameters": {
+    "kernel": "rbf",
+    "C": 10.594635089049195,
+    "epsilon": 0.013559579357622604,
+    "gamma": 0.01155978355611923
+  },
+  "cv_folds": 5,
+  "development_rows": 1020,
+  "development_source": "TRAIN + VALIDATION from notebook 06",
+  "test_used": false,
+  "final_refit": "complete TRAIN + VALIDATION development set",
+  "target_units": "t/ha",
+  "artifact": "results/synthetic_crop_yield/hyperparameter_optimization/artifacts/final_optimized_model.joblib"
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "synthetic_sleep_profiles",
+  "task_type": "multiclass_classification",
+  "input_top3_families": [
+    "Extra Trees",
+    "Random Forest",
+    "SVM"
+  ],
+  "optimizer": "Optuna",
+  "sampler": "TPESampler",
+  "trials_per_family_default": 20,
+  "cv_folds": 5,
+  "primary_metric": "Macro F1",
+  "direction": "maximize",
+  "development_data": "TRAIN + VALIDATION",
+  "test_used": false,
+  "selected_family": "Extra Trees",
+  "selected_hyperparameters": {
+    "n_estimators": 150,
+    "max_depth": null,
+    "min_samples_leaf": 2,
+    "max_features": "sqrt",
+    "class_weight": "balanced"
+  },
+  "best_cv_value": 0.4817723075575572,
+  "final_model": "results/synthetic_sleep_profiles/hyperparameter_optimization/artifacts/final_optimized_model.joblib",
+  "next_step": "Load final_optimized_model.joblib and evaluate it exactly once on the protected TEST partition. Do not refit or reselect hyperparameters in the TEST notebook."
+}

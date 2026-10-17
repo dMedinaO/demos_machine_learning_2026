@@ -1,0 +1,27 @@
+{
+  "dataset": "synthetic_crop_yield",
+  "task_type": "regression",
+  "input_top3_families": [
+    "Linear Regression",
+    "Ridge",
+    "SVR"
+  ],
+  "optimizer": "Optuna",
+  "sampler": "TPESampler",
+  "trials_per_family_default": 20,
+  "cv_folds": 5,
+  "primary_metric": "MAE (t/ha)",
+  "direction": "minimize",
+  "development_data": "TRAIN + VALIDATION",
+  "test_used": false,
+  "selected_family": "SVR",
+  "selected_hyperparameters": {
+    "kernel": "rbf",
+    "C": 10.594635089049195,
+    "epsilon": 0.013559579357622604,
+    "gamma": 0.01155978355611923
+  },
+  "best_cv_value": 0.7941752527957248,
+  "final_model": "results/synthetic_crop_yield/hyperparameter_optimization/artifacts/final_optimized_model.joblib",
+  "next_step": "Load final_optimized_model.joblib and evaluate it exactly once on the protected TEST partition. Do not refit or reselect hyperparameters in the TEST notebook."
+}

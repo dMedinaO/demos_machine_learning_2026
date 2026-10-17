@@ -1,0 +1,26 @@
+{
+  "dataset": "synthetic_alzheimer",
+  "task_type": "binary_classification",
+  "input_top3_families": [
+    "SVM",
+    "Logistic Regression",
+    "HistGradientBoosting"
+  ],
+  "optimizer": "Optuna",
+  "sampler": "TPESampler",
+  "trials_per_family_default": 20,
+  "cv_folds": 5,
+  "primary_metric": "MCC",
+  "direction": "maximize",
+  "development_data": "TRAIN + VALIDATION",
+  "test_used": false,
+  "selected_family": "SVM",
+  "selected_hyperparameters": {
+    "kernel": "linear",
+    "C": 0.04235455276099052,
+    "class_weight": null
+  },
+  "best_cv_value": 0.4412536277557112,
+  "final_model": "results/synthetic_alzheimer/hyperparameter_optimization/artifacts/final_optimized_model.joblib",
+  "next_step": "Load final_optimized_model.joblib and evaluate it exactly once on the protected TEST partition. Do not refit or reselect hyperparameters in the TEST notebook."
+}

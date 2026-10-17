@@ -1,0 +1,4 @@
+rank,family,best_cv_value,best_trial,best_params,best_fold_std,n_trials
+1,SVM,0.4412536277557112,16,"{""C"": 0.04235455276099052, ""class_weight"": null, ""kernel"": ""linear""}",0.10032730169874447,20
+2,Logistic Regression,0.4314618668908537,18,"{""C"": 0.25200647998324915, ""class_weight"": null, ""penalty"": ""l2""}",0.10375842977436939,20
+3,HistGradientBoosting,0.42412818306524985,14,"{""l2_regularization"": 9.844442225638742, ""learning_rate"": 0.03254484289533361, ""max_iter"": 150, ""max_leaf_nodes"": 52, ""min_samples_leaf"": 38}",0.13147370680637974,20

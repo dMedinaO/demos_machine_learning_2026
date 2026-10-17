@@ -1,0 +1,4 @@
+rank,family,best_cv_value,best_trial,best_params,best_fold_std,n_trials
+1,SVR,0.7941752527957248,7,"{""C"": 10.594635089049195, ""epsilon"": 0.013559579357622604, ""gamma"": 0.01155978355611923, ""kernel"": ""rbf""}",0.09947595948161514,20
+2,Linear Regression,0.8405685351010556,1,"{""fit_intercept"": true}",0.036270215425306764,4
+3,Ridge,0.8405688479819409,16,"{""alpha"": 0.00010698571003742123, ""fit_intercept"": true}",0.03627039521239208,20

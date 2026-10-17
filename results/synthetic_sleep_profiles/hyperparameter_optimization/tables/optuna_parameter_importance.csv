@@ -1,0 +1,15 @@
+family,parameter,importance
+Extra Trees,n_estimators,0.8542303701890546
+Extra Trees,max_features,0.0750169000803154
+Extra Trees,max_depth,0.04051881216659123
+Extra Trees,min_samples_leaf,0.021603334174535402
+Extra Trees,class_weight,0.008630583389503298
+Random Forest,min_samples_leaf,0.8648227614799887
+Random Forest,n_estimators,0.10113827314584593
+Random Forest,max_features,0.018729309064644595
+Random Forest,max_depth,0.014191993492419822
+Random Forest,class_weight,0.0011176628171008845
+SVM,C,0.9598845903813786
+SVM,kernel,0.03577571498867275
+SVM,class_weight,0.004339694629948547
+SVM,gamma,0.0

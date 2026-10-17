@@ -1,0 +1,13 @@
+family,parameter,importance
+SVM,C,0.9937991755392771
+SVM,kernel,0.0056813951043893415
+SVM,class_weight,0.0005194293563335102
+SVM,gamma,0.0
+Logistic Regression,C,0.9740448100753033
+Logistic Regression,penalty,0.019695592842932277
+Logistic Regression,class_weight,0.006259597081764332
+HistGradientBoosting,l2_regularization,0.6859354343584206
+HistGradientBoosting,max_iter,0.19220247195261317
+HistGradientBoosting,learning_rate,0.06232672419986691
+HistGradientBoosting,min_samples_leaf,0.03600887354575
+HistGradientBoosting,max_leaf_nodes,0.023526495943349233
